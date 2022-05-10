@@ -1,0 +1,1051 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link href="STYLE.CSS" rel="stylesheet" type="text/css">
+    <!-- bootstrap cdn link  -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+
+    <title> Khai báo y tế!</title>
+</head>
+
+<body>
+    <!-- header section starts -->
+    <section class="header" id="fullhder">
+        <header class="fixed-top py-3 hder1">
+
+            <div class="container d-flex align-items-center justify-content-between der2">
+
+                <a href="#" class="logo">c<span class="fas fa-virus"></span>vid-19</a>
+
+                <div id="menu-bar" class="fas fa-bars d-inline-block d-md-none"></div>
+
+                <nav class="nav">
+                    <a href="/covid-19 website/index.html">Trang chủ</a>
+                    <a href="/WEB-Mạnh-CovidNews/thongke.html">Thông tin Covid</a>
+                    <a href="/WEB- Minh Dung - Khai báo y tế/index.html">Khai báo y tế</a>
+                    <a href="/Khánh/Khanh.html" class="active">Đăng ký tiêm chủng</a>
+                </nav>
+            </div>
+        </header>
+    </section>
+    <!-- CÁC NÚT RADIO VÀ PROGRESS -->
+    <div class="row"><br /></div>
+
+   
+    <div class="step-row">
+        <div id="progress"></div>
+          <div class="step-col"><small>Thông tin</small></div>
+          <div class="step-col"><small>Tiền sử bệnh</small></div>
+          <div class="step-col"><small>Hoàn thành</small></div>
+      </div>
+    <div class="checkbox-row">
+        <div class="checkin4">
+            <input type="radio" name="in4" id="btn-dk_ban_than" value="" checked="checked" /> Đăng ký cho bản thân
+            <input type="radio" name="in4" id="btn-dk_nguoi_than" /> Đăng ký cho người thân
+        </div>
+    </div>
+    <!--                         -->
+    <div id="form1va2">
+        <form id="form1">
+
+
+            <div class="col-md-3 col-12 gioitinh1">
+                <div class="form-group gioitinh2">
+                    Đăng ký mũi tiêm thứ
+                    <span class="text-danger">(*)</span> <br />
+                    <select>
+                        <option selected>Mũi tiêm thứ nhất</option>
+                        <option>Mũi tiêm thứ hai</option>
+                        <option>Mũi tiêm khác</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="in4">
+                <div class="col-md-12 col-12 info">
+                    <h6>
+                        <h6 class="title">1. Thông tin người đăng ký tiêm</h6>
+                    </h6>
+                </div>
+            </div>
+
+            <!-- Họ tên - ngày sinh - giới tính - sđt -->
+            <div class="row htsdt">
+                <div class="col-md-3 col-12 hoten1">
+                    <div class="form-group hoten2">
+                        Họ và tên
+                        <span class="text-danger">(*)</span>
+                        <input type="text" data-msg-required="Bạn chưa nhập họ tên" placeholder="Họ và tên">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 ngaysinh1">
+                    <div class="form-group ngaysinh2">
+                        Ngày sinh
+                        <span class="text-danger">(*)</span> <br />
+                        <input type="date" data-msg-required="Bạn chưa điền ngày sinh">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 gioitinh1">
+                    <div class="form-group gioitinh2">
+                        Giới tính
+                        <span class="text-danger">(*)</span> <br />
+                        <div class="combobox">
+                            <div class="data gt">
+                                <select data-msg-required="Bạn chưa chọn giới tính">
+                                    <option disabled selected>Chọn giới tính</option>
+                                    <option>Nam</option>
+                                    <option>Nữ</option>
+                                    <option>Giới tính khác</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 sdt1">
+                    <div class="form-group sdt2">
+                        Số điện thoại
+                        <input type="tel" data-msg-required="Bạn chưa nhập số điện thoại" placeholder="Số điện thoại">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Email - CCCD - Số thẻ BHYT -->
+            <div class="row mailbhyt">
+                <div class="col-md-3 col-12 email1">
+                    <div class="form-group email2">
+                        Email <br />
+                        <input type="email" data-msg-required="Bạn chưa nhập Email" placeholder="Email">
+                    </div>
+                </div>
+                <div class="col-md-6 col-12 CCCD1">
+                    <div class="form-group CCCD2">
+                        CCCD/Mã định danh công dân
+                        <span class="text-danger">(*)</span><br />
+                        <input type="text" data-msg-required="Bạn chưa nhập CCCD/Mã định danh công dân"
+                            placeholder="CCCD/Mã định danh công dân">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 BHYT1">
+                    <div class="form-group BHYT2">
+                        Số thẻ BHYT
+                        <input type="text" data-msg-required="Bạn chưa nhập số thẻ BHYT" placeholder="Số thẻ BHYT">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nghề nghiệp - Đơn vị công tác - Dân tộc - Quốc tịch -->
+            <div class="row ngheqt">
+                <div class="col-md-3 col-12 nghe1">
+                    <div class="form-group nghe2">
+                        Nghề nghiệp
+                        <input type="text" placeholder="Nghề nghiệp">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 dvct1">
+                    <div class="form-group dvct2">
+                        Đơn vị công tác
+                        <input type="text" placeholder="Đơn vị công tác">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 dt1">
+                    <div class="form-group dt2">
+                        Dân tộc <br />
+                        <div class="combobox">
+                            <div class="data dt">
+                                <select>
+                                    <option disabled selected>Chọn dân tộc</option>
+                                    <option value="Kinh">Kinh</option>
+                                    <option value="Tày">Tày</option>
+                                    <option value="Thái">Thái</option>
+                                    <option value="Mường">Mường</option>
+                                    <option value="Khmer">Khmer</option>
+                                    <option value="Hoa">Hoa</option>
+                                    <option value="Nùng">Nùng</option>
+                                    <option value="Mông">Mông/option>
+                                    <option value="Dao">Dao</option>
+                                    <option value="Gia Rai">Gia Rai</option>
+                                    <option value="Ê Đê">Ê Đê</option>
+                                    <option value="Ba Na">Ba Na</option>
+                                    <option value="Sán Chay">Sán Chay</option>
+                                    <option value="Chăm">Chăm</option>
+                                    <option value="Cơ Ho">Cơ Ho</option>
+                                    <option value="Xơ Đăng">Xơ Đăng</option>
+                                    <option value="Sán Dìu">Sán Dìu</option>
+                                    <option value="Hrê">Hrê</option>
+                                    <option value="RaGlay">RaGlay</option>
+                                    <option value="Mnông">Mnông</option>
+                                    <option value="Thổ (4)">Thổ (4)</option>
+                                    <option value="Xtiêng">Xtiêng</option>
+                                    <option value="Khơ Mú">Khơ Mú</option>
+                                    <option value="Bru Vân Kiều">Bru Vân Kiều</option>
+                                    <option value="Cơ Tu">Cơ Tu</option>
+                                    <option value="Giáy">Giáy</option>
+                                    <option value="Tà Ôi">Tà Ôi</option>
+                                    <option value="Mạ">Mạ</option>
+                                    <option value="Giẻ-Triêng">Giẻ-Triêng</option>
+                                    <option value="Co">Co</option>
+                                    <option value="Chơ Ro">Chơ Ro</option>
+                                    <option value="Xinh Mun">Xinh Mun</option>
+                                    <option value="Hà Nhì">Hà Nhì</option>
+                                    <option value="Chu Ru">Chu Ru</option>
+                                    <option value="Lào">Lào</option>
+                                    <option value="La Chí">La Chí</option>
+                                    <option value="Kháng">Kháng</option>
+                                    <option value="Phù Lá">Phù Lá</option>
+                                    <option value="La Hủ">La Hủ</option>
+                                    <option value="La Ha">La Ha</option>
+                                    <option value="Pà Thẻn">Pà Thẻn</option>
+                                    <option value="Lự">Lự</option>
+                                    <option value="Ngái">Ngái</option>
+                                    <option value="Chứt">Chứt</option>
+                                    <option value="Lô Lô">Lô Lô</option>
+                                    <option value="Mảng">Mảng</option>
+                                    <option value="Cơ Lao">Cơ Lao</option>
+                                    <option value="Bố Y">Bố Y</option>
+                                    <option value="Cống">Cống</option>
+                                    <option value="Si La">Si La</option>
+                                    <option value="Pu Péo">Pu Péo</option>
+                                    <option value="Rơ Măm">Rơ Măm</option>
+                                    <option value="Brâu">Brâu</option>
+                                    <option value="Ơ Đu">Ơ Đu</option>
+                                    <option value="Người nước ngoài">Người nước ngoài</option>
+                                    <option value="Không rõ">Không rõ</option>
+                                    <option value="Không xác định">Không xác định</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 qt1">
+                    <div class="form-group qt2">
+                        Quốc tịch
+                        <div class="combobox">
+                            <div class="data qt">
+                                <select>
+                                    <option disabled selected>Chọn quốc tịch</option>
+                                    <option value="MC-TQ">Macao(Trung Quốc)</option>
+                                    <option value="Hồng Kông">Hồng Kông(Trung Quốc)</option>
+                                    <option value="ARXU">Ả Rập Xê Út</option>
+                                    <option value="Afghanistan">Afghanistan</option>
+                                    <option value="Ai Cập">Ai Cập</option>
+                                    <option value="Ấn Độ">Ấn Độ</option>
+                                    <option value="Anh">Anh</option>
+                                    <option value="Áo">Áo</option>
+                                    <option value="Argentina">Argentina</option>
+                                    <option value="Ba Lan">Ba Lan</option>
+                                    <option value="Bangladesh">Bangladesh</option>
+                                    <option value="Bỉ">Bỉ</option>
+                                    <option value="Bồ Đào Nha">Bồ Đào Nha</option>
+                                    <option value="Brazil">Brazil</option>
+                                    <option value="Canada">Canada</option>
+                                    <option value="Cộng hoà Séc">Cộng hoà Séc</option>
+                                    <option value="Croatia">Croatia</option>
+                                    <option value="Đan Mạch">Đan Mạch</option>
+                                    <option value="Đức">Đức</option>
+                                    <option value="Hoa Kỳ">Hoa Kỳ</option>
+                                    <option value="Hàn Quốc">Hàn Quốc</option>
+                                    <option value="Iran">Iran</option>
+                                    <option value="Israel">Israel</option>
+                                    <option value="Malaysia">Malaysia</option>
+                                    <option value="Nam Phi">Nam Phi</option>
+                                    <option value="Nepal">Nepal</option>
+                                    <option value="New Zealand">New Zealand</option>
+                                    <option value="Nga">Nga</option>
+                                    <option value="Nhật Bản">Nhật Bản</option>
+                                    <option value="Pakistan">Pakistan</option>
+                                    <option value="Phần Lan">Phần Lan</option>
+                                    <option value="Pháp">Pháp</option>
+                                    <option value="Philippines">Philippines</option>
+                                    <option value="Qatar">Qatar</option>
+                                    <option value="Singapore">Singapore</option>
+                                    <option value="Slovenia">Slovenia</option>
+                                    <option value="Tây Ban Nha">Tây Ban Nha</option>
+                                    <option value="Thái Lan">Thái Lan</option>
+                                    <option value="Thổ Nhĩ Kỳ">Thổ Nhĩ Kỳ</option>
+                                    <option value="Thuỵ Điển">Thuỵ Điển</option>
+                                    <option value="Thuỵ Sĩ">Thuỵ Sĩ</option>
+                                    <option value="Triều Tiên">Triều Tiên</option>
+                                    <option value="Úc">Úc</option>
+                                    <option value="Ý">Ý</option>
+                                    <option value="Campuchia">Campuchia</option>
+                                    <option value="Việt Nam">Việt Nam</option>
+                                    <option value="Trung Quốc">Trung Quốc</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Địa chỉ - Tỉnh/Thành phố - Quận/Huyện - Xã/Phường -->
+            <div class="row dcxp">
+                <div class="col-md-3 col-12 dc1">
+                    <div class="form-group dc2">
+                        Địa chỉ hiện tại
+                        <span class="text-danger">(*)</span>
+                        <input type="text" data-msg-required="Bạn chưa nhập địa chỉ" placeholder="Địa chỉ hiện tại">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 city1">
+                    <div class="form-group city2">
+                        Tỉnh/Thành phố
+                        <span class="text-danger">(*)</span>
+                        <input type="text" data-msg-required="Bạn chưa nhập tỉnh/thành phố"
+                            placeholder="Tỉnh/Thành phố">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 qh1">
+                    <div class="form-group qh2">
+                        Quận/Huyện
+                        <span class="text-danger">(*)</span>
+                        <input type="text" data-msg-required="Bạn chưa nhập quận/huyện" placeholder="Quận/Huyện">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 xp1">
+                    <div class="form-group xp2">
+                        Xã/Phường
+                        <span class="text-danger">(*)</span>
+                        <input type="text" data-msg-required="Bạn chưa nhập xã/phường" placeholder="Xã/Phường">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Title 2 -->
+            <div class="in4">
+                <div class="col-md-12 col-12 info">
+                    <h6>
+                        <h6 class="title">2. Thông tin đăng ký tiêm chủng</h6>
+                    </h6>
+                </div>
+            </div>
+
+            <!-- Ngày tiêm - Buổi tiêm -->
+            <div class="row ngaybuoi">
+                <div class="col-md-3 col-12 ngaytiem1">
+                    <div class="form-group ngaytiem2">
+                        Ngày tiêm mong muốn (dự kiến)
+                        <input type="date">
+                    </div>
+                </div>
+                <div class="col-md-3 col-12 buoitiem1">
+                    <div class="form-group buoitiem2">
+                        Buổi tiêm mong muốn (dự kiến)
+                        <div class="combobox">
+                            <div class="data nt">
+                                <select>
+                                    <option disabled selected>Chọn buổi tiêm</option>
+                                    <option>Buổi sáng</option>
+                                    <option>Buổi chiều</option>
+                                    <option>Cả ngày</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Ghi chú -->
+            <div class="note-row">
+                <p>
+                    Lưu ý:
+                </p>
+                <ul>
+                    <li>Việc đăng ký thông tin hoàn toàn bảo mật và phục vụ cho chiến dịch tiêm chủng Vắc-xin COVID-19
+                    </li>
+                    <li>Xin vui lòng kiểm tra kỹ các thông tin bắt buộc (Các thông tin có dấu (*))</li>
+                    <li>Bằng việc nhấn nút "Xác nhận", bạn hoàn toàn hiểu và đồng ý chịu trách nhiệm với các thông tin
+                        đã cung cấp</li>
+                </ul>
+            </div>
+
+            <!-- Button -->
+            <div class="btn-box">
+                <button type="button" id="Next1">Tiếp tục</button>
+            </div>
+        </form>
+
+        <!-- Form2 từ đây -->
+        <form id="form2">
+            <div class="nguoidangky">
+                <h6 class="title">1. Thông tin người đăng ký</h6>
+                <div class="col-md-4 col-12 hoten1">
+                    <div class="form-group hoten2">
+                        Họ và tên
+                        <span class="text-danger">(*)</span>
+                        <div><input type="text" data-msg-required="Bạn chưa nhập họ tên" placeholder="Họ và tên"></div>
+                    </div>
+                    <div class="col-md-12 col-12 sdt1">
+                        <div class="form-group sdt2">
+                            Số điện thoại
+                            <div><input type="tel" data-msg-required="Bạn chưa nhập số điện thoại"
+                                placeholder="Số điện thoại"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-12 col-12 gioitinh1">
+                        <div class="form-group gioitinh2">
+                            Đăng ký mũi tiêm thứ
+                            <span class="text-danger">(*)</span>
+                            <select>
+                                <option selected>Mũi tiêm thứ nhất</option>
+                                <option>Mũi tiêm thứ hai</option>
+                                <option>Mũi tiêm khác</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="in4">
+                    <div class="col-md-12 col-12 info">
+                        <h4>
+                            <h6 class="title">2. Thông tin người đăng ký tiêm</h6>
+                        </h4>
+                    </div>
+                </div>
+
+                <!-- Họ tên - ngày sinh - giới tính - sđt -->
+                <div class="row htsdt">
+                    <div class="col-md-3 col-12 hoten1">
+                        <div class="form-group hoten2">
+                            Họ và tên
+                            <span class="text-danger">(*)</span>
+                            <input type="text" data-msg-required="Bạn chưa nhập họ tên" placeholder="Họ và tên">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 ngaysinh1">
+                        <div class="form-group ngaysinh2">
+                            Ngày sinh
+                            <span class="text-danger">(*)</span> <br />
+                            <input type="date" data-msg-required="Bạn chưa điền ngày sinh">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 gioitinh1">
+                        <div class="form-group gioitinh2">
+                            Giới tính
+                            <span class="text-danger">(*)</span> <br />
+                            <div class="combobox">
+                                <div class="data gt">
+                                    <select data-msg-required="Bạn chưa chọn giới tính">
+                                        <option disabled selected>Chọn giới tính</option>
+                                        <option>Nam</option>
+                                        <option>Nữ</option>
+                                        <option>Giới tính khác</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 sdt1">
+                        <div class="form-group sdt2">
+                            Số điện thoại
+                            <input type="tel" data-msg-required="Bạn chưa nhập số điện thoại"
+                                placeholder="Số điện thoại">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Email - CCCD - Số thẻ BHYT -->
+                <div class="row mailbhyt">
+                    <div class="col-md-3 col-12 email1">
+                        <div class="form-group email2">
+                            Email <br />
+                            <input type="email" data-msg-required="Bạn chưa nhập Email" placeholder="Email">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-12 CCCD1">
+                        <div class="form-group CCCD2">
+                            CCCD/Mã định danh công dân
+                            <span class="text-danger">(*)</span><br />
+                            <input type="text" data-msg-required="Bạn chưa nhập CCCD/Mã định danh công dân"
+                                placeholder="CCCD/Mã định danh công dân">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 BHYT1">
+                        <div class="form-group BHYT2">
+                            Số thẻ BHYT
+                            <input type="text" data-msg-required="Bạn chưa nhập số thẻ BHYT" placeholder="Số thẻ BHYT">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nghề nghiệp - Đơn vị công tác - Dân tộc - Quốc tịch -->
+                <div class="row ngheqt">
+                    <div class="col-md-3 col-12 nghe1">
+                        <div class="form-group nghe2">
+                            Nghề nghiệp
+                            <input type="text" placeholder="Nghề nghiệp">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 dvct1">
+                        <div class="form-group dvct2">
+                            Đơn vị công tác
+                            <input type="text" placeholder="Đơn vị công tác">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 dt1">
+                        <div class="form-group dt2">
+                            Dân tộc <br />
+                            <div class="combobox">
+                                <div class="data dt">
+                                    <select>
+                                        <option disabled selected>Chọn dân tộc</option>
+                                        <option value="Kinh">Kinh</option>
+                                        <option value="Tày">Tày</option>
+                                        <option value="Thái">Thái</option>
+                                        <option value="Mường">Mường</option>
+                                        <option value="Khmer">Khmer</option>
+                                        <option value="Hoa">Hoa</option>
+                                        <option value="Nùng">Nùng</option>
+                                        <option value="Mông">Mông/option>
+                                        <option value="Dao">Dao</option>
+                                        <option value="Gia Rai">Gia Rai</option>
+                                        <option value="Ê Đê">Ê Đê</option>
+                                        <option value="Ba Na">Ba Na</option>
+                                        <option value="Sán Chay">Sán Chay</option>
+                                        <option value="Chăm">Chăm</option>
+                                        <option value="Cơ Ho">Cơ Ho</option>
+                                        <option value="Xơ Đăng">Xơ Đăng</option>
+                                        <option value="Sán Dìu">Sán Dìu</option>
+                                        <option value="Hrê">Hrê</option>
+                                        <option value="RaGlay">RaGlay</option>
+                                        <option value="Mnông">Mnông</option>
+                                        <option value="Thổ (4)">Thổ (4)</option>
+                                        <option value="Xtiêng">Xtiêng</option>
+                                        <option value="Khơ Mú">Khơ Mú</option>
+                                        <option value="Bru Vân Kiều">Bru Vân Kiều</option>
+                                        <option value="Cơ Tu">Cơ Tu</option>
+                                        <option value="Giáy">Giáy</option>
+                                        <option value="Tà Ôi">Tà Ôi</option>
+                                        <option value="Mạ">Mạ</option>
+                                        <option value="Giẻ-Triêng">Giẻ-Triêng</option>
+                                        <option value="Co">Co</option>
+                                        <option value="Chơ Ro">Chơ Ro</option>
+                                        <option value="Xinh Mun">Xinh Mun</option>
+                                        <option value="Hà Nhì">Hà Nhì</option>
+                                        <option value="Chu Ru">Chu Ru</option>
+                                        <option value="Lào">Lào</option>
+                                        <option value="La Chí">La Chí</option>
+                                        <option value="Kháng">Kháng</option>
+                                        <option value="Phù Lá">Phù Lá</option>
+                                        <option value="La Hủ">La Hủ</option>
+                                        <option value="La Ha">La Ha</option>
+                                        <option value="Pà Thẻn">Pà Thẻn</option>
+                                        <option value="Lự">Lự</option>
+                                        <option value="Ngái">Ngái</option>
+                                        <option value="Chứt">Chứt</option>
+                                        <option value="Lô Lô">Lô Lô</option>
+                                        <option value="Mảng">Mảng</option>
+                                        <option value="Cơ Lao">Cơ Lao</option>
+                                        <option value="Bố Y">Bố Y</option>
+                                        <option value="Cống">Cống</option>
+                                        <option value="Si La">Si La</option>
+                                        <option value="Pu Péo">Pu Péo</option>
+                                        <option value="Rơ Măm">Rơ Măm</option>
+                                        <option value="Brâu">Brâu</option>
+                                        <option value="Ơ Đu">Ơ Đu</option>
+                                        <option value="Người nước ngoài">Người nước ngoài</option>
+                                        <option value="Không rõ">Không rõ</option>
+                                        <option value="Không xác định">Không xác định</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 qt1">
+                        <div class="form-group qt2">
+                            Quốc tịch
+                            <div class="combobox">
+                                <div class="data qt">
+                                    <select>
+                                        <option disabled selected>Chọn quốc tịch</option>
+                                        <option value="MC-TQ">Macao(Trung Quốc)</option>
+                                        <option value="Hồng Kông">Hồng Kông(Trung Quốc)</option>
+                                        <option value="ARXU">Ả Rập Xê Út</option>
+                                        <option value="Afghanistan">Afghanistan</option>
+                                        <option value="Ai Cập">Ai Cập</option>
+                                        <option value="Ấn Độ">Ấn Độ</option>
+                                        <option value="Anh">Anh</option>
+                                        <option value="Áo">Áo</option>
+                                        <option value="Argentina">Argentina</option>
+                                        <option value="Ba Lan">Ba Lan</option>
+                                        <option value="Bangladesh">Bangladesh</option>
+                                        <option value="Bỉ">Bỉ</option>
+                                        <option value="Bồ Đào Nha">Bồ Đào Nha</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Canada">Canada</option>
+                                        <option value="Cộng hoà Séc">Cộng hoà Séc</option>
+                                        <option value="Croatia">Croatia</option>
+                                        <option value="Đan Mạch">Đan Mạch</option>
+                                        <option value="Đức">Đức</option>
+                                        <option value="Hoa Kỳ">Hoa Kỳ</option>
+                                        <option value="Hàn Quốc">Hàn Quốc</option>
+                                        <option value="Iran">Iran</option>
+                                        <option value="Israel">Israel</option>
+                                        <option value="Malaysia">Malaysia</option>
+                                        <option value="Nam Phi">Nam Phi</option>
+                                        <option value="Nepal">Nepal</option>
+                                        <option value="New Zealand">New Zealand</option>
+                                        <option value="Nga">Nga</option>
+                                        <option value="Nhật Bản">Nhật Bản</option>
+                                        <option value="Pakistan">Pakistan</option>
+                                        <option value="Phần Lan">Phần Lan</option>
+                                        <option value="Pháp">Pháp</option>
+                                        <option value="Philippines">Philippines</option>
+                                        <option value="Qatar">Qatar</option>
+                                        <option value="Singapore">Singapore</option>
+                                        <option value="Slovenia">Slovenia</option>
+                                        <option value="Tây Ban Nha">Tây Ban Nha</option>
+                                        <option value="Thái Lan">Thái Lan</option>
+                                        <option value="Thổ Nhĩ Kỳ">Thổ Nhĩ Kỳ</option>
+                                        <option value="Thuỵ Điển">Thuỵ Điển</option>
+                                        <option value="Thuỵ Sĩ">Thuỵ Sĩ</option>
+                                        <option value="Triều Tiên">Triều Tiên</option>
+                                        <option value="Úc">Úc</option>
+                                        <option value="Ý">Ý</option>
+                                        <option value="Campuchia">Campuchia</option>
+                                        <option value="Việt Nam">Việt Nam</option>
+                                        <option value="Trung Quốc">Trung Quốc</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Địa chỉ - Tỉnh/Thành phố - Quận/Huyện - Xã/Phường -->
+                <div class="row dcxp">
+                    <div class="col-md-3 col-12 dc1">
+                        <div class="form-group dc2">
+                            Địa chỉ hiện tại
+                            <span class="text-danger">(*)</span>
+                            <input type="text" data-msg-required="Bạn chưa nhập địa chỉ" placeholder="Địa chỉ hiện tại">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 city1">
+                        <div class="form-group city2">
+                            Tỉnh/Thành phố
+                            <span class="text-danger">(*)</span>
+                            <input type="text" data-msg-required="Bạn chưa nhập tỉnh/thành phố"
+                                placeholder="Tỉnh/Thành phố">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 qh1">
+                        <div class="form-group qh2">
+                            Quận/Huyện
+                            <span class="text-danger">(*)</span>
+                            <input type="text" data-msg-required="Bạn chưa nhập quận/huyện" placeholder="Quận/Huyện">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 xp1">
+                        <div class="form-group xp2">
+                            Xã/Phường
+                            <span class="text-danger">(*)</span>
+                            <input type="text" data-msg-required="Bạn chưa nhập xã/phường" placeholder="Xã/Phường">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Title 2 -->
+                <div class="in4">
+                    <div class="col-md-12 col-12 info">
+                        <h6>
+                            <span class="title">2. Thông tin đăng ký tiêm chủng</span>
+                        </h6>
+                    </div>
+                </div>
+
+                <!-- Ngày tiêm - Buổi tiêm -->
+                <div class="row ngaybuoi">
+                    <div class="col-md-3 col-12 ngaytiem1">
+                        <div class="form-group ngaytiem2">
+                            Ngày tiêm mong muốn (dự kiến)
+                            <input type="date">
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-12 buoitiem1">
+                        <div class="form-group buoitiem2">
+                            Buổi tiêm mong muốn (dự kiến)
+                            <div class="combobox">
+                                <div class="data nt">
+                                    <select>
+                                        <option disabled selected>Chọn buổi tiêm</option>
+                                        <option>Buổi sáng</option>
+                                        <option>Buổi chiều</option>
+                                        <option>Cả ngày</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ghi chú -->
+                <div class="note-row">
+                    <p>
+                        Lưu ý:
+                    </p>
+                    <ul>
+                        <li>Việc đăng ký thông tin hoàn toàn bảo mật và phục vụ cho chiến dịch tiêm chủng Vắc-xin
+                            COVID-19</li>
+                        <li>Xin vui lòng kiểm tra kỹ các thông tin bắt buộc (Các thông tin có dấu (*))</li>
+                        <li>Bằng việc nhấn nút "Xác nhận", bạn hoàn toàn hiểu và đồng ý chịu trách nhiệm với các thông
+                            tin đã cung cấp</li>
+                    </ul>
+                </div>
+
+                <!-- Button -->
+                <div class="btn-box">
+                    <button type="button" id="Cancel1">Hủy bỏ</button>
+                    <button type="button" id="Next2">Tiếp tục</button>
+                </div>
+            </div>
+        </form>
+        <!-- Form3 từ đây -->
+        <form id="form3">
+            <div class="table-responsive mt-1">
+                <table class="table table-bordered mb-0">
+                    <thead>
+                        <tr>
+                            <th class="text_symptoms" translate="dau_hieu">Tiền sử</th>
+                            <th class="text_symptoms" translate="dau_hieu">Triệu chứng</th>
+                            <th width="10%" class="text-center text_yes" translate="co">Có</th>
+                            <th width="10%" class="text-center text_no" translate="khong">Không</th>
+                            <th width="10%" class="text-center text_dontknow" translate="khong-ro">Không rõ</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="list-tiensu">
+                        <tr>
+                            <td>1. Tiền sử phản vệ từ độ 2 trở lên</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại tác nhân dị ứng"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>2. Tiền sử bị COVID-19 trong vòng 6 tháng</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu"
+                                        class="text-tiensu"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>3. Tiền sử tiêm vắc xin khác trong 14 ngày qua</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại vắc xin"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked="checked"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>4. Tiền sử suy giảm suy giảm miễn dịch, ung thư giai đoạn cuối, cắt lách, xơ gan mất
+                                bù,...</span></td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu"
+                                        class="text-tiensu"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>5. Đang dùng thuốc ức chế miễn dịch, corticoid liều ca (tương đương hoặc hơn 2 mg
+                                prednisolon/kh/ngày trong ít nhất 7 ngày) hoặc điều trị hóa trị, xạ trị</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại vắc xin"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>6. Bệnh cấp tính</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại vắc xin"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>7. Tiền sử bệnh mạn tính, đang tiến triển</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại mắc bệnh"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>8. Tiền sử bệnh mạn tính đã điều trị ổn</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại mắc bệnh"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>9. Đang mang thai, phụ nữ đang nuôi con bằng sữa mẹ</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu"
+                                        class="text-tiensu"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>10. Độ tuổi >= 65 tuổi</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại mắc bệnh"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>11. Tiền sử rối loạn động máu/cầm máu hoặc đang dùng thuốc chống đông</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ loại mắc bệnh"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>12. Tiền sử dị ứng với các dị nguyên khác</td>
+                            <td class="text-center td-center">
+                                <label class="Ts-text"><input type="text" id="TS" name="tiensu" class="text-tiensu"
+                                        placeholder="Nếu có, ghi rõ"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="0" checked=""></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="1"></label>
+                            </td>
+                            <td class="text-center td-center">
+                                <label class="Ts-radio"><input type="radio" id="TS" name="tiensu" class="radio-tiensu"
+                                        value="2"></label>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="btn-box">
+                <button type="button" id="Back1">Quay lại</button>
+                <button type="button" id="Next3">Tiếp tục</button>
+            </div>
+        </form>
+
+        <form id="form4">
+            <div class="dongytiem">
+                <p>
+                    1. Tiêm chủng vắc xin là biện pháp phòng chống dịch hiệu quả, tuy nhiên vắc xin phòng COVID-19 có
+                    thể không phòng được bệnh hoàn toàn. Người được tiêm chủng vắc xin phòng COVID-19 có thể phòng được
+                    bệnh hoặc giảm mức độ nặng nếu mắc bệnh. Tuy nhiên, sau khi tiêm chủng vẫn phải tiếp tục thực hiện
+                    nghiêm túc các biện pháp phòng chống dịch theo quy định
+                    2. Tiêm chủng vắc xin phòng COVID-19 có thể gây ra một số biểu hiện tại chỗ tiêm hoặc toàn thân như
+                    sưng, đau chỗ tiêm, nhức đầu, buồn nôn, đau cơ,... hoặc tai biến nắng sau khi tiêm chủng.
+                    3. Khi có triệu chứng bất thường về sức khỏe, người được tiêm chủng cần đến ngay cơ sở y tế gần nhất
+                    để được tư vấn, thăm khám và điều trị kịp thời
+                </p>
+
+                <div class="btn-box">
+                    <button type="button" id="Back2">Quay lại</button>
+                    <button type="submit" id="Submit">Xác nhận</button>
+                </div>
+            </div>
+        </form>
+    </div>
+
+
+
+
+
+    <!-- footer section starts  -->
+    <div id="footer">
+        <section class="footer" style="background-color: #143F6B;">
+
+            <div class="container ft1">
+
+                <div class="d-flex flex-wrap justify-content-center text-center text-sm-start ft2" id="footer1">
+
+                    <div class="box p-3 m-2">
+                        <h3>Địa điểm</h3>
+                        <a href="#">Việt Nam</a>
+                        <a href="#">USA</a>
+                        <a href="#">Japan</a>
+                        <a href="#">France</a>
+
+                    </div>
+
+
+
+                    <div class="box p-3 m-2">
+                        <h3>follow us</h3>
+                        <a href="#"><span class="fab fa-facebook-f"></span>&ensp;facebook </span></a>
+                        <a href="#"><span class="fab fa-instagram"></span>&ensp;instagram</a>
+                        <a href="#"><span class="fab fa-linkedin"></span>&ensp;linkedin</a>
+                        <a href="#"><span class="fab fa-twitter"></span>&ensp;twitter</a>
+                    </div>
+
+                    <div class="box p-3 m-2">
+                        <h3>Thông tin liên lạc</h3>
+                        <a href="#"><span class="bi bi-telephone"></span>&ensp;0933115489</a>
+                        <a href="#"><span class="bi bi-telephone"></span>&ensp;0111587987</a>
+                        <a href="#"><span class="bi bi-envelope"></span>&ensp;covid19-VietNam@gmail.com</a>
+                        <a href="#"><span class="bi bi-geo-alt"></span> Việt Nam, Hà Nội</a>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- footer section ends -->
+
+    <script src="SCRIPT.JS"></script>
+
+</body>
+
+</html>
